@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alternative Evaluation</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="plot"></div>
+    <table>
+      <tr>
+        <th>Альтернативні
+          варіанти
+          розміщення 
+          нового складу</th>
+        <th>Новий міст
+          буде
+          побудований</th>
+        <th>Новий міст не
+          буде
+          побудований</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" id="altAX" step="0.01"></td>
+        <td><input type="number" id="altAY" step="0.01"></td>
+        <td><input type="color" id="altColorA"></td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td><input type="number" id="altBX" step="0.01"></td>
+        <td><input type="number" id="altBY" step="0.01"></td>
+        <td><input type="color" id="altColorB"></td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td><input type="number" id="altCX" step="0.01"></td>
+        <td><input type="number" id="altCY" step="0.01"></td>
+        <td><input type="color" id="altColorC"></td>
+      </tr>
+    </table>
+    <br>
+    <button id="updateBtn">Оновити</button>
+    <div id="results">
+      <!-- Results will be displayed here -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
