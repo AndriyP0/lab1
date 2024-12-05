@@ -1,2 +1,2 @@
 # lab1
-lab-1 fof my castomer on GitHub
+lab-1 fof my customer on GitHub
